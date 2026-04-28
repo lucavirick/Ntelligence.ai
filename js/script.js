@@ -1,5 +1,5 @@
 /* ================================================
-   NTELLIGENCE — INTERACTIONS & ANIMATIONS
+   NTELLIGENCE - INTERACTIONS & ANIMATIONS
    ================================================ */
 
 window.addEventListener('load', () => {
@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
 
     /* ── Pre-rendered bloom sprite ───────────────
        One radial-gradient circle. Drawn per dot
-       via drawImage — 10× faster than per-frame
+       via drawImage - 10× faster than per-frame
        gradient creation, gives true circular bloom.
     ───────────────────────────────────────────── */
     const SPRITE_SIZE = 36;
@@ -50,7 +50,7 @@ window.addEventListener('load', () => {
         sctx.fillRect(0, 0, SPRITE_SIZE, SPRITE_SIZE);
     }
 
-    /* ── Fibonacci sphere — perfectly even coverage ── */
+    /* ── Fibonacci sphere - perfectly even coverage ── */
     const DOT_COUNT = 1700;
     const dots = [];
     const GOLDEN = Math.PI * (3 - Math.sqrt(5));
@@ -76,7 +76,7 @@ window.addEventListener('load', () => {
             axX: ax / aLen,
             axY: ay / aLen,
             axZ: az / aLen,
-            // Significant swirl: 1.2π to 2.4π — feels orbital, not chaotic
+            // Significant swirl: 1.2π to 2.4π - feels orbital, not chaotic
             swirl:       (1.2 + Math.random() * 1.2) * Math.PI,
             startRadius: 2.0 + Math.random() * 1.4,
             delay:       Math.random() * 1400,           // staggered start
@@ -158,7 +158,7 @@ window.addEventListener('load', () => {
             let [px, py, pz] = rotateAxis(d.fx, d.fy, d.fz, d.axX, d.axY, d.axZ, ang);
             px *= rr; py *= rr; pz *= rr;
 
-            // After settle: subtle per-dot radial pulse — sphere feels alive
+            // After settle: subtle per-dot radial pulse - sphere feels alive
             if (t >= 1) {
                 const pulse = 1 + 0.010 * Math.sin(elapsed * 0.0028 + d.phase);
                 px *= pulse; py *= pulse; pz *= pulse;
@@ -186,7 +186,7 @@ window.addEventListener('load', () => {
             const alpha = (0.07 + depthSq * 0.93) * t * shimmer;
             const baseSize = 0.7 + depthSq * 2.2;
 
-            // Bloom sprite — drawn at ~6× core size for halo
+            // Bloom sprite - drawn at ~6× core size for halo
             const drawSize = baseSize * 5.5;
             ctx.globalAlpha = alpha;
             ctx.drawImage(
@@ -222,7 +222,7 @@ window.addEventListener('load', () => {
 
     /* ─── HERO entrance ──────────────────────────
        Logo/text appear as the sphere is finishing
-       its formation — ~1.6s in, settles by ~4s.
+       its formation - ~1.6s in, settles by ~4s.
     ──────────────────────────────────────────── */
 
     const heroTl = gsap.timeline({ delay: 1.6 });

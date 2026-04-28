@@ -7,11 +7,11 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Consultation -->
+  <!-- Request a Demo -->
   <url>
-    <loc>https://ntelligence.ai/consultation</loc>
-    <lastmod>2026-04-27</lastmod>
-    <priority>0.7</priority>
+    <loc>https://ntelligence.ai/request-demo</loc>
+    <lastmod>2026-04-28</lastmod>
+    <priority>0.9</priority>
   </url>
 
   <!-- Legal -->
