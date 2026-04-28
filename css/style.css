@@ -698,7 +698,7 @@ body {
     font-size: 0.78rem;
     font-weight: 400;
     letter-spacing: 0;
-    color: var(--subtle);
+    color: var(--text);
 }
 
 .footer-links {
