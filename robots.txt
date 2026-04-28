@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ntelligence.ai/sitemap.xml

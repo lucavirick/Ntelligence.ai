@@ -1,0 +1,71 @@
+========================================
+FILE: index.html
+========================================
+  H2: Your stack is siloed. The work isn't.
+  H3: Pre-built for enterprise finance.
+  H3: Built by people who close the books.
+  H4: Close acceleration
+  H4: Allocation transparency
+  H4: Variance explanation
+  H4: Consolidation continuity
+
+========================================
+FILE: consultation.html
+========================================
+  H1: Book a Consultation
+
+========================================
+FILE: privacy-policy.html
+========================================
+  H1: Privacy Policy
+  H2: 1. Definitions
+  H2: 2. Categories of Personal Data We Collect
+  H3: A. Identifiers
+  H3: B. Internet or Network Activity Information
+  H3: C. Account Information
+  H3: D. Communications Data
+  H3: E. Sensitive Personal Information
+  H2: 3. Sources of Personal Data
+  H2: 4. Purposes of Processing
+  H2: 5. Legal Bases for Processing (GDPR)
+  H2: 6. Cookies and Tracking Technologies
+  H2: 7. Disclosure of Personal Data
+  H2: 8. International Data Transfers
+  H2: 9. Data Retention
+  H2: 10. Security Measures
+  H2: 11. Your Privacy Rights
+  H3: A. GDPR / UK GDPR Rights
+  H3: B. California (CCPA/CPRA) Rights
+  H3: C. Other U.S. State Rights
+  H2: 12. Global Privacy Control (GPC)
+  H2: 13. Children's Privacy
+  H2: 14. Third-Party Links
+  H2: 15. Business Transfers
+  H2: 16. Changes to This Privacy Policy
+  H2: 17. Contact Information
+
+========================================
+FILE: terms-of-service.html
+========================================
+  H1: Terms of Service
+  H2: 1. Eligibility
+  H2: 2. Scope of Services
+  H2: 3. User Accounts
+  H2: 4. Acceptable Use
+  H2: 5. Intellectual Property
+  H2: 6. Confidential Information
+  H2: 7. Third-Party Links and Services
+  H2: 8. Disclaimer of Warranties
+  H2: 9. Professional Disclaimer
+  H2: 10. Limitation of Liability
+  H2: 11. Indemnification
+  H2: 12. Data Protection
+  H2: 13. Suspension and Termination
+  H2: 14. Force Majeure
+  H2: 15. Governing Law
+  H2: 16. Dispute Resolution
+  H2: 17. Waiver and Severability
+  H2: 18. Assignment
+  H2: 19. Entire Agreement
+  H2: 20. Modifications
+  H2: 21. Contact Information
