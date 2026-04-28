@@ -711,47 +711,152 @@ body {
 .footer-links a {
     font-size: 0.78rem;
     font-weight: 500;
-    color: var(--muted);
+    color: var(--text);
     text-decoration: none;
     letter-spacing: 0.02em;
-    transition: color 0.25s;
+    transition: color 0.25s, opacity 0.25s;
 }
 
 .footer-links a:hover {
-    color: var(--text);
+    color: var(--accent);
+    opacity: 0.95;
 }
 
 /* ─── RESPONSIVE ───────────────────────────── */
 
 @media (max-width: 980px) {
+    /* ── Mobile bridge — compact, one-screen, vertical flow ── */
     .bridge-diagram {
         grid-template-columns: 1fr;
         gap: 0;
-        margin: 4rem 0 3.5rem;
-    }
-    .bridge-side {
-        border: 1px solid var(--line);
-    }
-    .bridge-side:first-child,
-    .bridge-side:last-child {
-        border-left: 1px solid var(--line);
-        border-right: 1px solid var(--line);
-    }
-    .bridge-flow {
-        flex-direction: row;
-        padding: 1rem;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-    }
-    .flow-arrow {
-        display: none;
-    }
-    .bridge-center {
-        flex: 1;
-        max-width: 100%;
+        margin: 3rem 0 2.5rem;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    /* Side cards — slim banners with inline · separated items */
+    .bridge-side {
+        padding: 1rem 1.25rem 1.1rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.018);
+        border: 1px solid var(--line);
+    }
+    .bridge-side:first-child  { border-radius: 6px 6px 0 0; }
+    .bridge-side:last-child   { border-radius: 0 0 6px 6px; }
+
+    .bridge-label {
+        font-size: 0.66rem;
+        margin: 0 0 0.7rem;
+        padding-bottom: 0.5rem;
+        letter-spacing: 0.24em;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .bridge-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.35rem 0;
+    }
+    .bridge-list li {
+        display: inline-flex;
+        align-items: center;
+        border: none;
+        padding: 0;
+        font-size: 0.78rem;
+        font-weight: 400;
+        color: var(--text-soft, rgba(237, 232, 223, 0.78));
+        line-height: 1.4;
+    }
+    .bridge-list li:not(:last-child)::after {
+        content: '\00B7';
+        margin: 0 0.55rem;
+        color: var(--accent);
+        font-weight: 700;
+        opacity: 0.7;
+    }
+
+    /* Flow column — vertical with arrows around center */
+    .bridge-flow {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .flow-arrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+    }
+
+    .flow-line {
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(to bottom,
+            rgba(220, 38, 38, 0.05),
+            var(--accent),
+            rgba(220, 38, 38, 0.05));
+        flex: 1;
+    }
+    .flow-arrow-bottom .flow-line {
+        background: linear-gradient(to top,
+            rgba(220, 38, 38, 0.05),
+            var(--accent),
+            rgba(220, 38, 38, 0.05));
+    }
+
+    .flow-tip {
+        font-size: 1rem;
+        line-height: 0;
+        transform: rotate(90deg);
+        margin: -0.15rem 0;
+    }
+
+    /* Ntelligence center — the focal point */
+    .bridge-center {
+        flex: none;
+        max-width: 100%;
+        padding: 1.5rem 1.5rem 1.4rem;
+        border-radius: 8px;
+        /* slightly stronger glow on mobile so it pops as the focal point */
+        animation-duration: 3.5s;
+    }
+
+    .bridge-label-center {
+        font-size: 0.72rem;
+        margin: 0 0 1rem;
+        padding-bottom: 0.7rem;
+        letter-spacing: 0.26em;
+    }
+
+    .bridge-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.3rem 0;
+    }
+    .bridge-actions li {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0;
+        line-height: 1.3;
+    }
+    .bridge-actions li:not(:last-child)::after {
+        content: '\00B7';
+        margin: 0 0.6rem;
+        color: var(--accent);
+        font-weight: 700;
+    }
+
+    /* Seam values stack vertically below diagram */
     .seam-values {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -830,6 +935,11 @@ body {
 @media (max-width: 480px) {
     .section-headline { font-size: clamp(1.7rem, 9vw, 2.2rem); }
     .outcome-num { font-size: clamp(2.1rem, 11vw, 3rem); }
-    .bridge-side { padding: 2rem 1.5rem; }
-    .bridge-flow { flex-direction: column; }
+
+    /* tighter spacing for narrow phones */
+    .bridge-list li { font-size: 0.74rem; }
+    .bridge-list li:not(:last-child)::after { margin: 0 0.45rem; }
+    .bridge-actions li { font-size: 0.94rem; }
+    .bridge-actions li:not(:last-child)::after { margin: 0 0.5rem; }
+    .bridge-center { padding: 1.25rem 1.25rem 1.15rem; }
 }
