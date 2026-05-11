@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NT3927W515"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NT3927W515');
-    </script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="79112b8f-a42d-4f1b-b0c6-0fa9afbe9d6b"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -148,11 +140,6 @@
 
         .back-link:hover { opacity: 0.8; }
 
-        /* ── FORM PLACEHOLDER ──
-           Replace the .form-placeholder block below with the
-           Formspree-wired <form> when ready. Keep .demo-form-card
-           as the wrapper so the styling stays consistent.
-        */
         .demo-form-card {
             margin-top: 3rem;
             padding: 3rem 2.5rem;
@@ -161,33 +148,143 @@
             background: rgba(255, 255, 255, 0.018);
         }
 
-        .form-placeholder {
+        .demo-form-card .form-row {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .demo-form-card .form-group {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 220px;
-            border: 1px dashed var(--line-warm);
-            border-radius: 4px;
-            padding: 2.5rem 1.5rem;
-            background: rgba(220, 38, 38, 0.025);
+            margin-bottom: 1.5rem;
+            flex: 1;
         }
 
-        .form-placeholder .placeholder-tag {
-            font-size: 0.68rem;
+        .demo-form-card label {
+            font-size: 0.78rem;
             font-weight: 600;
-            letter-spacing: 0.22em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 1rem;
+            color: var(--text-soft, rgba(237, 232, 223, 0.85));
+            margin-bottom: 0.5rem;
         }
 
-        .form-placeholder p {
+        .demo-form-card label .required {
+            color: var(--accent);
+            margin-left: 0.15em;
+        }
+
+        .demo-form-card input,
+        .demo-form-card textarea,
+        .demo-form-card select {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text, #ede8df);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--line, rgba(237, 232, 223, 0.1));
+            border-radius: 4px;
+            padding: 0.75rem 1rem;
+            transition: border-color 0.25s;
+            -webkit-appearance: none;
+        }
+
+        .demo-form-card input:focus,
+        .demo-form-card textarea:focus,
+        .demo-form-card select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .demo-form-card input::placeholder,
+        .demo-form-card textarea::placeholder {
+            color: var(--muted, rgba(237, 232, 223, 0.4));
+        }
+
+        .demo-form-card select option {
+            background: #1a1410;
+            color: var(--text, #ede8df);
+        }
+
+        .demo-form-card .systems-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-form-card .systems-group label.group-label {
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .demo-form-card .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 0.6rem 1.5rem;
+        }
+
+        .demo-form-card .checkbox-grid label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.92rem;
+            font-weight: 400;
+            letter-spacing: 0;
+            text-transform: none;
+            cursor: pointer;
+        }
+
+        .demo-form-card .checkbox-grid input[type="checkbox"] {
+            -webkit-appearance: auto;
+            appearance: auto;
+            width: 16px;
+            height: 16px;
+            padding: 0;
+            flex-shrink: 0;
+            cursor: pointer;
+            accent-color: var(--accent);
+        }
+
+        .demo-form-card textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .demo-form-card .submit-btn {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #fff;
+            background: var(--accent);
+            border: none;
+            border-radius: 4px;
+            padding: 0.9rem 2.5rem;
+            cursor: pointer;
+            transition: opacity 0.25s;
+        }
+
+        .demo-form-card .submit-btn:hover {
+            opacity: 0.85;
+        }
+
+        .demo-form-card .submit-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .demo-form-card .form-status {
+            margin-top: 1rem;
             font-size: 0.95rem;
-            color: var(--muted);
-            margin: 0;
-            max-width: 480px;
+            font-weight: 500;
+            min-height: 1.4em;
+        }
+
+        .demo-form-card .form-status.success {
+            color: #22c55e;
+        }
+
+        .demo-form-card .form-status.error {
+            color: var(--accent);
         }
 
         .demo-page .fallback-cta {
@@ -216,7 +313,8 @@
         @media (max-width: 700px) {
             .demo-page { padding: 5.5rem 1.25rem 4rem; }
             .demo-form-card { padding: 2rem 1.5rem; }
-            .form-placeholder { padding: 2rem 1rem; min-height: 180px; }
+            .demo-form-card .form-row { flex-direction: column; gap: 0; }
+            .demo-form-card .checkbox-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
@@ -226,33 +324,49 @@
         <a href="index.html" class="back-link">&larr; Return to Ntelligence</a>
 
         <h1>Request a <em>demo.</em></h1>
-        <p class="lede">See Ntelligence operate across SAP, Oracle EPM, Workday, OneStream, and the systems your team already runs on. Tell us about one workflow you'd like to compress and we&rsquo;ll walk through how an agent would handle it. Live.</p>
+        <p class="lede">Tell us about one workflow you want to compress and we&rsquo;ll walk through how Ntelligence handles it.</p>
 
-        <h2>What to expect</h2>
-        <ul>
-            <li>30-minute working session with The Nth Power, scheduled within a week of your request.</li>
-            <li>Walkthrough of agents operating across ERP and EPM with real data shapes. Not slideware.</li>
-            <li>A scoped Lighthouse pilot proposal, if there&rsquo;s a fit. Six-to-eight-week engagement, fixed scope, founding-customer terms.</li>
-        </ul>
-
-        <!-- ────────────────────────────────────────────────────────
-             FORM PLACEHOLDER
-             ────────────────────────────────────────────────────────
-             Wire the Formspree form here when you're ready. The
-             form should POST to your Formspree endpoint and live
-             inside .demo-form-card. Recommended fields:
-               - Name (required)
-               - Work email (required)
-               - Company (required)
-               - Role / title
-               - Current systems (multi-select: SAP, Oracle EPM, OneStream, Anaplan, PeopleSoft, Workday, Other)
-               - The workflow you want to compress (textarea)
-        ──────────────────────────────────────────────────────── -->
         <div class="demo-form-card">
-            <div class="form-placeholder">
-                <span class="placeholder-tag">Form Coming Soon</span>
-                <p>The request form is being built. In the meantime, email <a href="mailto:engage@thenthpower.com">engage@thenthpower.com</a> with your name, company, and the workflow you&rsquo;d like to see. We&rsquo;ll get back to you within one business day.</p>
-            </div>
+            <form id="demo-form" action="https://formspree.io/f/xnjwzobk" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="you@company.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">Company <span class="required">*</span></label>
+                        <input type="text" id="company" name="company" required placeholder="Company name">
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role / Title</label>
+                        <input type="text" id="role" name="role" placeholder="e.g. FP&amp;A Director">
+                    </div>
+                </div>
+                <div class="systems-group">
+                    <label class="group-label">Current Systems</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="systems" value="SAP"> SAP</label>
+                        <label><input type="checkbox" name="systems" value="Oracle EPM"> Oracle EPM</label>
+                        <label><input type="checkbox" name="systems" value="OneStream"> OneStream</label>
+                        <label><input type="checkbox" name="systems" value="Anaplan"> Anaplan</label>
+                        <label><input type="checkbox" name="systems" value="PeopleSoft"> PeopleSoft</label>
+                        <label><input type="checkbox" name="systems" value="Workday"> Workday</label>
+                        <label><input type="checkbox" name="systems" value="Other"> Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="workflow">Workflow You Want to Compress</label>
+                    <textarea id="workflow" name="workflow" placeholder="Describe one workflow you would like to see automated or accelerated."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Request Demo</button>
+                <div id="demo-form-status" class="form-status"></div>
+            </form>
         </div>
 
         <div class="fallback-cta">
@@ -260,6 +374,46 @@
             <a href="mailto:engage@thenthpower.com">engage@thenthpower.com</a>
         </div>
     </main>
+    <script>
+        const demoForm = document.getElementById('demo-form');
+        const formStatus = document.getElementById('demo-form-status');
+
+        if (demoForm) {
+            demoForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const data = new FormData(this);
+                const action = this.action;
+
+                formStatus.className = 'form-status';
+                formStatus.innerText = 'Sending...';
+
+                try {
+                    const response = await fetch(action, {
+                        method: 'POST',
+                        body: data,
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        demoForm.reset();
+                        formStatus.innerText = 'Thanks for your interest. We will be in touch within one business day.';
+                        formStatus.classList.add('success');
+                    } else {
+                        const jsonData = await response.json();
+                        if (jsonData.errors) {
+                            formStatus.innerText = jsonData.errors.map(error => error.message).join(", ");
+                        } else {
+                            formStatus.innerText = "There was a problem submitting your request. Please try again.";
+                        }
+                        formStatus.classList.add('error');
+                    }
+                } catch (error) {
+                    formStatus.innerText = "There was a problem submitting your request. Please try again.";
+                    formStatus.classList.add('error');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
