@@ -152,13 +152,14 @@ body {
     background: var(--line);
 }
 
-.hero-rule span {
+.hero-rule-text {
     font-size: 0.7rem;
     font-weight: 500;
     letter-spacing: 0.18em;
     color: var(--text);
     white-space: nowrap;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .scroll-hint {
@@ -883,7 +884,7 @@ body {
     .hero-sub { margin-bottom: 2rem; font-size: 0.95rem; }
     .rule-line { width: 36px; }
     .hero-rule { gap: 1rem; }
-    .hero-rule span { font-size: 0.62rem; }
+    .hero-rule-text { font-size: 0.62rem; }
 
     .section { padding: 5rem 0; }
     .section-inner { padding: 0 1.5rem; }

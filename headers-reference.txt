@@ -1,19 +1,21 @@
 ========================================
 FILE: index.html
 ========================================
-  H2: Your stack is siloed. The work isn't.
+  H1: One AI-native platform. Every system in between.
+  H2: Intelligence to the Nth degree
+  H3: Your stack is siloed. The work isn't.
   H3: Pre-built for enterprise finance.
-  H3: Built by people who close the books.
-  H4: Close acceleration
-  H4: Allocation transparency
-  H4: Variance explanation
-  H4: Consolidation continuity
+    H4: Close acceleration
+    H4: Forecast & variance
+    H4: Governed by design
+    H4: One platform, less sprawl
+  H3: Built by the people who've lived the finance stack.
+  H3: Start with one workflow.
 
 ========================================
 FILE: request-demo.html
 ========================================
   H1: Request a demo.
-  H2: What to expect
 
 ========================================
 FILE: privacy-policy.html
