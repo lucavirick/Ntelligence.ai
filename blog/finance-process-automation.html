@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="a9f24cfc-6b35-4907-9dc0-ea8528d85a35"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="How The Nth Power automated a multi-step allocation process across SAP BusinessObjects, Excel, Essbase, and SAP GL with driver-based waterfall allocations and approval workflows.">
+    <link rel="canonical" href="https://www.thenthpower.com/blog/finance-process-automation">
+    <meta property="og:title" content="Finance Process Automation Case Study | The Nth Power">
+    <meta property="og:description"
+        content="Case study: How The Nth Power transitioned a client from manual Excel inputs to driver-based waterfall allocations using Essbase, eliminating errors and shortening close times.">
+    <meta property="og:url" content="https://www.thenthpower.com/blog/finance-process-automation">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="The Nth Power">
+    <meta property="og:image" content="https://www.thenthpower.com/img/OG-TAG-The-Nth-Power.png">
+    <title>Finance Process Automation Case Study | The Nth Power</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../img/The-Nth-Power-Favicon.png">
+    <link rel="stylesheet" href="../css/blog.css">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Finance Process Automation Case Study",
+  "description": "How The Nth Power transitioned a client from manual Excel inputs to driver-based waterfall allocations using Essbase, eliminating errors and shortening close times.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Nth Power Inc.",
+    "logo": { "@type": "ImageObject", "url": "https://www.thenthpower.com/img/The-Nth-Power-Logo.png" }
+  },
+  "url": "https://www.thenthpower.com/blog/finance-process-automation",
+  "datePublished": "2026-04-06",
+  "dateModified": "2026-04-06",
+  "author": {
+    "@type": "Organization",
+    "name": "The Nth Power Inc."
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.thenthpower.com/blog/finance-process-automation"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.thenthpower.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://www.thenthpower.com/#solutions" },
+    { "@type": "ListItem", "position": 3, "name": "Finance Process Automation", "item": "https://www.thenthpower.com/blog/finance-process-automation" }
+  ]
+}
+</script>
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <nav class="floating-nav">
+        <div class="nav-pill">
+            <a href="../solutions/finance-transformation.html" class="nav-item">Back to Solution</a>
+            <a href="../index.html" class="nav-item">Home</a>
+            <a href="../index.html#contact" class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <article>
+        <header class="blog-post-header">
+            <div class="container" style="max-width: 1250px;">
+                <span class="blog-post-meta">Finance Transformation</span>
+                <h1>Finance Process Automation</h1>
+                <h2>Automating Finance Allocations with Oracle Essbase: Replacing Excel Workflows Between SAP BusinessObjects and the SAP General Ledger</h2>
+            </div>
+        </header>
+
+        <div class="container blog-post-content">
+            <p>Many finance organizations still rely on fragmented workflows to move data between reporting systems, spreadsheets, and core financial platforms. Over time, these manual processes introduce operational risk&mdash;complex spreadsheets, inconsistent calculations, and time-consuming troubleshooting during close cycles.</p>
+
+            <p>In this engagement, we helped a client automate a multi-step allocation process that previously relied on manual movement of data between SAP BusinessObjects, Excel, Oracle Essbase, and the SAP General Ledger.</p>
+
+            <h3>The Legacy Process</h3>
+            <p>The client's allocation workflow depended heavily on spreadsheet-driven processes and manual intervention.</p>
+            <p>The process typically followed this sequence:</p>
+            <ol>
+                <li>Financial data exported from SAP BusinessObjects</li>
+                <li>Data manipulated and prepared in Excel</li>
+                <li>Allocation calculations performed using complex Excel formulas</li>
+                <li>Results loaded into Oracle Essbase</li>
+                <li>Final intercompany postings prepared manually and uploaded to SAP GL</li>
+            </ol>
+            <p>This workflow created several challenges. Spreadsheet logic became difficult to maintain, troubleshooting allocation errors consumed valuable time, and onboarding new users into the process required extensive training. During close cycles, these dependencies introduced delays and increased the risk of calculation or posting errors.</p>
+
+            <h3>Solution Implemented</h3>
+            <p>To address these issues, we replaced the spreadsheet-driven allocation process with an automated workflow built directly within the EPM platform.</p>
+
+            <p>The solution introduced driver-based waterfall allocations executed through Essbase calculation scripts, using operational drivers such as headcount and revenue. By embedding allocation logic within the system itself, the process no longer relied on external Excel models.</p>
+
+            <p>Additional automation was introduced through:</p>
+            <ul>
+                <li>Smart process controls governing when allocations run</li>
+                <li>Approval workflows attached to allocation reporting</li>
+                <li>Automated intercompany elimination postings generated for downstream integration with SAP GL</li>
+            </ul>
+            <p>This structure centralized the logic for allocations, reduced manual handling of data, and introduced governance around the approval and posting process.</p>
+
+            <h3>Results</h3>
+            <p>The automated process replaced several manual steps across reporting, allocation, and posting workflows.</p>
+            <p>Key outcomes included:</p>
+
+            <p><strong>Faster Financial Close Cycles</strong><br>Eliminating spreadsheet-driven calculations reduced time spent preparing and validating allocations.</p>
+
+            <p><strong>Reduced Operational Risk</strong><br>Allocation logic now runs within the EPM platform rather than across multiple Excel models.</p>
+
+            <p><strong>Improved Process Governance</strong><br>Approval workflows introduced visibility and control over allocation results.</p>
+
+            <p><strong>Simplified User Onboarding</strong><br>Removing complex spreadsheets made the process easier for finance teams to operate and maintain.</p>
+
+            <p>By automating allocation processes within the EPM environment, organizations can reduce manual dependencies, improve reliability, and allow finance teams to focus more on analysis rather than managing spreadsheet workflows.</p>
+
+            <a href="../solutions/finance-transformation.html" class="back-link">&larr; Back to Solution</a>
+        </div>
+    </article>
+
+
+    <footer class="main-footer">
+        <div class="container footer-bottom">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/the-nth-power-inc." target="_blank">LinkedIn</a>
+                <a href="../privacy-policy.html">Privacy Policy</a>
+                <a href="../terms-of-service.html">Terms of Service</a>
+            </div>
+            <span>2026 The Nth Power. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

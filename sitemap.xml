@@ -2,27 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://ntelligence.ai/</loc>
-    <lastmod>2026-05-13</lastmod>
+    <loc>https://www.thenthpower.com/</loc>
+    <lastmod>2026-04-27</lastmod>
     <priority>1.0</priority>
   </url>
 
-  <!-- Request a Demo -->
+  <!-- Solutions -->
   <url>
-    <loc>https://ntelligence.ai/request-demo</loc>
-    <lastmod>2026-05-13</lastmod>
-    <priority>0.9</priority>
+    <loc>https://www.thenthpower.com/solutions/finance-transformation</loc>
+    <lastmod>2026-04-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thenthpower.com/solutions/infrastructure</loc>
+    <lastmod>2026-04-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thenthpower.com/solutions/data-integration</loc>
+    <lastmod>2026-04-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blogs / Case Studies -->
+  <url>
+    <loc>https://www.thenthpower.com/blog/finance-process-automation</loc>
+    <lastmod>2026-04-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.thenthpower.com/blog/infrastructure-rationalization</loc>
+    <lastmod>2026-04-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.thenthpower.com/blog/jython-fdmee-concat</loc>
+    <lastmod>2026-04-27</lastmod>
+    <priority>0.6</priority>
   </url>
 
   <!-- Legal -->
   <url>
-    <loc>https://ntelligence.ai/privacy-policy</loc>
-    <lastmod>2026-05-13</lastmod>
+    <loc>https://www.thenthpower.com/privacy-policy</loc>
+    <lastmod>2026-04-27</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://ntelligence.ai/terms-of-service</loc>
-    <lastmod>2026-05-13</lastmod>
+    <loc>https://www.thenthpower.com/terms-of-service</loc>
+    <lastmod>2026-04-27</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>
